@@ -34,7 +34,7 @@ class CameraModule extends React.Component {
     // need the refs.video to get the videoElement so the component has to be
     // mounted.
     this.cameraPhoto = new CameraPhoto(this.videoRef.current);
-    let facingMode = FACING_MODES.ENVIRONMENT;
+    let facingMode = FACING_MODES.USER;
     let idealResolution = { width: 640, height: 480 };
     this.startCamera(facingMode, idealResolution);
     }
